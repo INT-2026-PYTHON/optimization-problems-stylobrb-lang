@@ -85,7 +85,7 @@ def has_pair_brute(nums, k):
             if abs(nums[i] - nums[j]) == k:
                 return True
     return False
-def has_pair_fast(nums, k):
+def has_pair_first(nums, k):
     num_set = set(nums)
     for x in num_set:
         if (x + k) in num_set or (x - k) in num_set:
@@ -99,7 +99,7 @@ k = int(input("enter value of k:"))
 print(f"\nYour list: {nums}")
 print(f"K: {k}")
 print(f"Brute force: {has_pair_brute(nums, k)}")
-print(f"Optimised: {has_pair_fast(nums, k)}")
+print(f"Optimised: {has_pair_first(nums, k)}")
 
 
 
