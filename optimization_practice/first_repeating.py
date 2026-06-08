@@ -90,7 +90,7 @@ def first_repeating_brute(nums):
                 return nums[j]
     return -1
 
-def first_repeating_fast(nums):
+def first_repeating_first(nums):
     seen = set()
     for num in nums:
         if num in seen:
@@ -102,5 +102,5 @@ nums = [int(x) for x in user_input.split()]
 
 print(f"\nYour list: {nums}")
 print(f"Brute force: {first_repeating_brute(nums)}")
-print(f"Optimised: {first_repeating_fast(nums)}")
+print(f"Optimised: {first_repeating_first(nums)}")
 
