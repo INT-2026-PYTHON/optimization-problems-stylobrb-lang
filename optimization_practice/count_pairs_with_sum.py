@@ -98,7 +98,7 @@ def count_pairs_brute(nums, target):
             if nums[i] + nums[j] == target:
                 count +=1
     return count
-def count_pairs_fast(nums, target):
+def count_pairs_first(nums, target):
     freq = {}
     count = 0
     for x in nums:
@@ -114,7 +114,7 @@ target = int(input("enter target sum:"))
 print(f"\nYour list: {nums}")
 print(f"Target: {target}")
 print(f"Brute force: {count_pairs_brute(nums, target)}")
-print(f"Optimised: {count_pairs_fast(nums, target)}")
+print(f"Optimised: {count_pairs_first(nums, target)}")
 
 
 
