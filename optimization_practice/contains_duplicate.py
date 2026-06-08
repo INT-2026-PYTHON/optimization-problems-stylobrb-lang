@@ -69,7 +69,7 @@ def has_duplicate_brute(nums):
             if nums[i] == nums[j]:
                 return True
     return False
-def has_duplicate_fast(nums):
+def has_duplicate_first(nums):
     seen = set()
     for num in nums:
         if num in seen:
@@ -78,7 +78,7 @@ def has_duplicate_fast(nums):
 
 nums = [1, 2, 3, 1]
 print(f"Brute Force : {has_duplicate_brute(nums)}") 
-print(f"Fast Force : {has_duplicate_fast(nums)}")    
+print(f"Optimized : {has_duplicate_first(nums)}")    
 
             
 
