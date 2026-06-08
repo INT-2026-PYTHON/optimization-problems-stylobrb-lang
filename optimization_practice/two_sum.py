@@ -93,7 +93,7 @@ def two_sum_brute(nums, target):
             if nums[i] + nums[j] == target:
                 return (i, j)
      return None
-def two_sum_fast(nums, target):
+def two_sum_first(nums, target):
     seen = {}
     for i in range(len(nums)):
         complement = target - nums[i]
@@ -108,5 +108,5 @@ target = int(input("enter target sum:"))
 print(f"\nYour list: {nums}")
 print(f"Target: {target}")
 print(f"Brute force: {two_sum_brute(nums, target)}")
-print(f"Optimised: {two_sum_fast(nums, target)}")
+print(f"Optimised: {two_sum_first(nums, target)}")
 
